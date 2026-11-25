@@ -41,4 +41,4 @@ For production static assets, run `python manage.py collectstatic` and configure
 - Tent names, capacities, prices, and inclusions.
 - Trail names, distances, durations, and difficulty.
 - Physical address, Facebook link, group-size maximum, and booking policies.
-- Service inclusions, FAQ answers, and other `[PLACEHOLDER]` content.
+- Service inclusions, FAQ answers, and other `To be specified` content.
