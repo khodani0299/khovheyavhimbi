@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en-ZA">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Khovhe Yavhimbi – Camping, Hiking &amp; Picnic Experiences</title>
+	<meta name="description" content="Khovhe Yavhimbi is an outdoor adventure and leisure destination offering picnic experiences, hiking trails and camping. Explore our experiences and request a quote.">
+	<meta name="theme-color" content="#2E4636">
+	<script>document.documentElement.className+=" js"</script>
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 32'%3E%3Cpath d='M1 30 17 6l7 10 5-7 18 21z' fill='%232E4636'/%3E%3C/svg%3E">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap">
+	<!-- Khovhe Yavhimbi styles -->
+	<link rel="stylesheet" href="{% static 'css/khovhe.css' %}">
+</head>
+
+<body>
+{% include "partials/page-loader.html" %}
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+	<symbol id="i-mountain" viewBox="0 0 24 24"><path d="M2 20 9 7l4 7 3-4 6 10z"/></symbol>
+	<symbol id="i-swim" viewBox="0 0 24 24"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 22c2 0 2-1.5 4-1.5S8 22 10 22s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M8 15V6a2 2 0 0 1 2-2M14 15V6a2 2 0 0 1 2-2M8 9h6"/></symbol>
+	<symbol id="i-hike" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2"/><path d="M12 8v6l-3 7M12 14l3 7M12 10l4 3M12 10l-3 3"/></symbol>
+	<symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+	<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+	<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+	<symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 7l9 6 9-6"/></symbol>
+	<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+	<symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.3 2.6 2 4.4 5 4.6"/></symbol>
+	<symbol id="i-insta" viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+	<symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></symbol>
+	<symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+</svg>
+
+{% include "partials/header.html" %}
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="k-hero">
+	<img class="k-hero__img" src="{% static 'images/khovhe/hero.webp' %}" alt="Cream canvas tents on a stone platform beside a pool, framed by trees and distant mountains" fetchpriority="high">
+	<div class="container k-hero__content">
+		<p class="k-eyebrow k-eyebrow--light">Outdoor adventure &amp; leisure destination</p>
+		<h1>Escape the Ordinary. <em>Experience Khovhe Yavhimbi.</em></h1>
+		<p class="k-hero__lead">Picnics beneath the trees, hiking trails through wild terrain and nights spent camping with the mountains in view. Slow down, step outside and make time for nature.</p>
+		<div class="k-hero__cta">
+			<a href="#experiences" class="k-btn k-btn--light">Explore Our Experiences</a>
+			<a href="request-quote.html?package=Not%20sure%20yet" class="k-btn k-btn--outline-light">Request a Quote</a>
+		</div>
+	</div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="k-section" id="about">
+	<div class="container">
+		<div class="row align-items-center g-5">
+			<div class="col-lg-6 order-2 order-lg-1 k-reveal">
+				<p class="k-eyebrow">About Khovhe Yavhimbi</p>
+				<h2>A quiet corner of the outdoors, made for slowing down.</h2>
+				<p>Khovhe Yavhimbi is a place to breathe out. Wake up in a comfortable tent among old trees, spend an afternoon on a picnic blanket in the open air, or lace up your boots and follow the trails into the hills.</p>
+				<p>Whether you come for an adventure, a weekend away or simply some peace and quiet, everything here is built around the landscape, so you can switch off and enjoy it.</p>
+				<ul class="k-points">
+					<li><svg class="ico" aria-hidden="true"><use href="#i-mountain"/></svg><span>Mountain views</span></li>
+					<li><svg class="ico" aria-hidden="true"><use href="#i-swim"/></svg><span>Pool on site</span></li>
+					<li><svg class="ico" aria-hidden="true"><use href="#i-hike"/></svg><span>Signed hiking trails</span></li>
+					<li><svg class="ico" aria-hidden="true"><use href="#i-bulb"/></svg><span>Evenings under string lights</span></li>
+				</ul>
+				<a href="#experiences" class="k-link">Find your experience <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+			</div>
+			<div class="col-lg-6 order-1 order-lg-2 k-reveal">
+				<figure class="k-about-photo">
+					<img src="{% static 'images/khovhe/about.webp' %}" alt="A canvas tent behind potted palms, with a large tree and picnic bench in the background" loading="lazy">
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ================= EXPERIENCES ================= -->
+<section class="k-section k-section--beige" id="experiences">
+	<div class="container">
+		<header class="k-head k-reveal">
+			<p class="k-eyebrow">What we offer</p>
+			<h2>Our Experiences</h2>
+			<p>Three ways to spend time outdoors. Pick one, or combine them.</p>
+		</header>
+		<div class="row g-4">
+			<div class="col-md-4 k-reveal">
+				<article class="k-xcard">
+					<img src="{% static 'images/khovhe/picnic.webp' %}" alt="Wooden chairs and a table on a stone platform beneath an old tree" loading="lazy">
+					<div class="k-xcard__body">
+						<h3>Picnic Experiences</h3>
+						<p>Relaxed outdoor spaces surrounded by nature. Options for individuals, couples and groups.</p>
+						<a href="request-quote.html?service=Picnic&amp;package=Not%20sure%20yet" class="k-xcard__link">Request a Quote <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-4 k-reveal">
+				<article class="k-xcard">
+					<img src="{% static 'images/khovhe/hiking.webp' %}" alt="A leaf-covered forest trail with a signpost beside twisting vines" loading="lazy">
+					<div class="k-xcard__body">
+						<h3>Hiking Adventures</h3>
+						<p>Explore our trails through rocky, wooded terrain, with scenery to match every effort.</p>
+						<a href="hiking.html" class="k-xcard__link">Explore More <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-4 k-reveal">
+				<article class="k-xcard">
+					<img src="{% static 'images/khovhe/camping.webp' %}" alt="Inside a canvas tent: a made bed with white linen, a sage blanket and string lights" loading="lazy">
+					<div class="k-xcard__body">
+						<h3>Camping Experiences</h3>
+						<p>Sleep outdoors in comfort. Choose from our tent options and request pricing for your dates.</p>
+						<a href="packages.html#camping-packages" class="k-xcard__link">Explore More <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ================= CAMPING & TENTS ================= -->
+
+<!-- Temporarily hidden:
+<section class="k-section" id="camping">
+	<div class="container">
+		<header class="k-head k-reveal">
+			<p class="k-eyebrow">Camping &amp; tents</p>
+			<h2>Choose a camping option</h2>
+			<p>Compare the options at a glance. Select a tent to see its details and request a quote.</p>
+		</header>
+
+		<div class="row g-4">
+			<div class="col-md-6 col-lg-4 k-reveal">
+				<article class="k-tent k-tent--forest">
+					<div class="k-tent__img"><img src="{% static 'images/khovhe/tent-a.webp' %}" alt="Interior of an A-frame tent with a wooden bed, white linen and string lights" loading="lazy"><span class="k-tag">Tent 1</span></div>
+					<div class="k-tent__body">
+						<details class="k-combo">
+							<summary class="k-combo__summary">
+								<span class="k-combo__intro"><span class="k-combo__name">A-Frame Tent</span><span class="k-combo__teaser">A canvas tent with a raised bed and string lights.</span></span>
+								<span class="k-combo__toggle">View tent details</span>
+							</summary>
+							<div class="k-combo__details">
+								<p>A spacious A-frame canvas tent with a raised wooden bed, soft linen and string lights overhead.</p>
+								<dl class="k-specs">
+									<div><dt>Capacity</dt><dd><span class="ph">To be confirmed</span></dd></div>
+									<div><dt>Price</dt><dd><span class="ph">R ___ (to be confirmed)</span></dd></div>
+								</dl>
+								<p class="k-incl-title">Facilities &amp; inclusions</p>
+								<ul class="k-incl"><li class="ph">To be confirmed</li><li class="ph">To be confirmed</li><li class="ph">To be confirmed</li></ul>
+								<a href="request-quote.html?service=Camping%20stay&amp;package=Combo%205" class="k-btn k-btn--solid k-btn--block">Request a Quote</a>
+							</div>
+						</details>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-6 col-lg-4 k-reveal">
+				<article class="k-tent k-tent--olive">
+					<div class="k-tent__img"><img src="{% static 'images/khovhe/tent-b.webp' %}" alt="A peaked inflatable tent with arched windows and a made bed inside" loading="lazy"><span class="k-tag">Tent 2</span></div>
+					<div class="k-tent__body">
+						<details class="k-combo">
+							<summary class="k-combo__summary">
+								<span class="k-combo__intro"><span class="k-combo__name">Peak Tent</span><span class="k-combo__teaser">A peak-roof tent with a fitted bed.</span></span>
+								<span class="k-combo__toggle">View tent details</span>
+							</summary>
+							<div class="k-combo__details">
+								<p>An inflatable peak-roof tent with arched windows and a fitted bed, set on a paved platform among the trees.</p>
+								<dl class="k-specs">
+									<div><dt>Capacity</dt><dd><span class="ph">To be confirmed</span></dd></div>
+									<div><dt>Price</dt><dd><span class="ph">R ___ (to be confirmed)</span></dd></div>
+								</dl>
+								<p class="k-incl-title">Facilities &amp; inclusions</p>
+								<ul class="k-incl"><li class="ph">To be confirmed</li><li class="ph">To be confirmed</li><li class="ph">To be confirmed</li></ul>
+								<a href="request-quote.html?service=Camping%20stay&amp;package=Combo%203" class="k-btn k-btn--solid k-btn--block">Request a Quote</a>
+							</div>
+						</details>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-6 col-lg-4 k-reveal">
+				<article class="k-tent k-tent--brown">
+					<div class="k-tent__img"><img src="{% static 'images/khovhe/tent-c.webp' %}" alt="An A-frame tent with mesh front panels on a stone platform, with potted palms in front" loading="lazy"><span class="k-tag">Tent 3</span></div>
+					<div class="k-tent__body">
+						<details class="k-combo">
+							<summary class="k-combo__summary">
+								<span class="k-combo__intro"><span class="k-combo__name">Skylight A-Frame</span><span class="k-combo__teaser">An A-frame tent with mesh panels and a roof window.</span></span>
+								<span class="k-combo__toggle">View tent details</span>
+							</summary>
+							<div class="k-combo__details">
+								<p>An A-frame tent with mesh front panels and a roof window, looking out over the trees and hills.</p>
+								<dl class="k-specs">
+									<div><dt>Capacity</dt><dd><span class="ph">To be confirmed</span></dd></div>
+									<div><dt>Price</dt><dd><span class="ph">R ___ (to be confirmed)</span></dd></div>
+								</dl>
+								<p class="k-incl-title">Facilities &amp; inclusions</p>
+								<ul class="k-incl"><li class="ph">To be confirmed</li><li class="ph">To be confirmed</li><li class="ph">To be confirmed</li></ul>
+								<a href="request-quote.html?service=Camping%20stay&amp;package=Luxury%20Combo" class="k-btn k-btn--solid k-btn--block">Request a Quote</a>
+							</div>
+						</details>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+-->
+
+<!-- ================= HIKING TRAILS ================= -->
+<!-- Temporarily hidden:
+<section class="k-section k-section--beige" id="trails">
+	<div class="container">
+		<header class="k-head k-reveal">
+			<p class="k-eyebrow">Hiking trails</p>
+			<h2>Follow the trail</h2>
+			<p>Signs along the way carry words of encouragement. Trail details will be listed here as they are confirmed.</p>
+		</header>
+		<div class="row g-4">
+			<div class="col-md-6 k-reveal">
+				<article class="k-trail">
+					<div class="k-trail__img"><img src="{% static 'images/khovhe/trail-1.webp' %}" alt="A group of hikers climbing a rocky trail under a canopy of green trees" loading="lazy"></div>
+					<div class="k-trail__body">
+						<h3><span class="ph">Trail name</span></h3>
+						<p class="ph">Trail description to be confirmed.</p>
+						<dl class="k-specs k-specs--3">
+							<div><dt>Distance</dt><dd><span class="ph">— km</span></dd></div>
+							<div><dt>Duration</dt><dd><span class="ph">— hrs</span></dd></div>
+							<div><dt>Difficulty</dt><dd><span class="ph">—</span></dd></div>
+						</dl>
+						<a href="request-quote.html?service=Hike&amp;package=Not%20sure%20yet" class="k-btn k-btn--outline k-btn--block">Enquire</a>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-6 k-reveal">
+				<article class="k-trail">
+					<div class="k-trail__img"><img src="{% static 'images/khovhe/hiking.webp' %}" alt="A forest trail covered in fallen leaves, with a signpost among twisting vines" loading="lazy" style="object-position:55% 60%"></div>
+					<div class="k-trail__body">
+						<h3><span class="ph">Trail name</span></h3>
+						<p class="ph">Trail description to be confirmed.</p>
+						<dl class="k-specs k-specs--3">
+							<div><dt>Distance</dt><dd><span class="ph">— km</span></dd></div>
+							<div><dt>Duration</dt><dd><span class="ph">— hrs</span></dd></div>
+							<div><dt>Difficulty</dt><dd><span class="ph">—</span></dd></div>
+						</dl>
+						<a href="request-quote.html?service=Hike&amp;package=Not%20sure%20yet" class="k-btn k-btn--outline k-btn--block">Enquire</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+-->
+
+
+<!-- ================= GALLERY ================= -->
+<section class="k-section" id="gallery">
+	<div class="container">
+		<header class="k-gallery-heading k-reveal">
+			<p class="k-eyebrow">A glimpse of the outdoors</p>
+			<h2>Moments worth remembering</h2>
+			<p>It&rsquo;s not just a journey, it&rsquo;s a return to self.</p>
+		</header>
+		<div class="k-gallery-intro k-reveal">
+			<p class="k-gallery-intro__copy">Spend a day by the pool, settle in among old trees, or take in the mountain views. Khovhe Yavhimbi brings camping, picnics and hiking together in one quiet outdoor setting.</p>
+			<div class="k-gallery-facts">
+				<div>
+					<p class="k-eyebrow">Stay</p>
+					<p>Tents on paved platforms, with a toilet and shower with hot water.</p>
+				</div>
+				<div>
+					<p class="k-eyebrow">Spend the day</p>
+					<p>Picnics, the swimming pool and a braai area.</p>
+				</div>
+			</div>
+		</div>
+		<div class="k-gallery k-reveal" role="group" aria-label="Photos of Khovhe Yavhimbi">
+			<button class="k-gallery__a" data-full="{% static 'images/khovhe/gallery-2.webp' %}" aria-label="View photo: tent beside the pool">
+				<img src="{% static 'images/khovhe/gallery-2.webp' %}" alt="A cream tent beside the swimming pool among the trees" loading="lazy">
+			</button>
+			<button class="k-gallery__b" data-full="{% static 'images/khovhe/picnic.webp' %}" aria-label="View photo: picnic area beneath a tree">
+				<img src="{% static 'images/khovhe/picnic.webp' %}" alt="Picnic table and chairs on a paved platform beneath an old tree" loading="lazy">
+			</button>
+			<button class="k-gallery__c" data-full="{% static 'images/khovhe/gallery-3.webp' %}" aria-label="View photo: tent at dusk with string lights">
+				<img src="{% static 'images/khovhe/gallery-3.webp' %}" alt="A tent at dusk with string lights and a wooden chair" loading="lazy">
+			</button>
+			<button class="k-gallery__d" data-full="{% static 'images/khovhe/about.webp' %}" aria-label="View photo: tent among old trees">
+				<img src="{% static 'images/khovhe/about.webp' %}" alt="A tent set among old trees on a paved platform" loading="lazy">
+			</button>
+		</div>
+		<a href="request-quote.html?package=Not%20sure%20yet" class="k-link k-gallery-cta">Plan your visit <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+	</div>
+</section>
+
+<!-- ================= REQUEST A QUOTE ================= -->
+<section class="k-section k-quote k-quote--landing" id="quote">
+	<div class="container">
+		<div class="k-quote-landing k-reveal">
+			<div>
+				<p class="k-eyebrow k-eyebrow--light">Request a quote</p>
+				<h2>Tell us how you would like to unwind.</h2>
+				<p>Choose a service, pick your dates and send your request. We will come back to you with a quote.</p>
+			</div>
+			<a href="request-quote.html?package=Not%20sure%20yet" class="k-btn k-btn--light">Request a Quote</a>
+		</div>
+	</div>
+</section>
+
+</main>
+
+{% include "partials/footer.html" %}
+
+<!-- Lightbox -->
+<div class="k-lightbox" id="k-lightbox" hidden>
+	<button class="k-lightbox__close" aria-label="Close"><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button>
+	<img alt="">
+</div>
+<script src="{% static 'js/khovhe.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<div class="k-page-loader" id="k-page-loader" role="status" aria-live="polite" aria-atomic="true" aria-hidden="false">
+	<div class="k-page-loader__content">
+		<svg class="k-page-loader__mark" viewBox="0 0 48 32" aria-hidden="true">
+			<path d="M1 30 17 6l7 10 5-7 18 21z" fill="currentColor"/>
+			<path d="M17 6l-4 6 4-2 3 4z" fill="#FAF7EF" opacity=".55"/>
+		</svg>
+		<span class="k-page-loader__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+		<p>Loading...</p>
+	</div>
+</div>
+<script>
+	(function () {
+		var loader = document.getElementById("k-page-loader");
+		function hideLoader() {
+			document.documentElement.classList.add("page-ready");
+			if (loader) {
+				loader.classList.remove("is-active");
+				loader.setAttribute("aria-hidden", "true");
+			}
+		}
+		window.addEventListener("load", hideLoader, { once: true });
+		window.addEventListener("pageshow", hideLoader);
+		if (document.readyState === "complete") window.setTimeout(hideLoader, 0);
+	})();
+</script>
